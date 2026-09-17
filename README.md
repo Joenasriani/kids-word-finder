@@ -1,30 +1,48 @@
-WORD FINDER
-WORD FINDER is a magical, interactive word search puzzle game built for children and educational environments. It offers a clean, responsive UI with progressive difficulty levels and full bilingual support.
-PROJECT OVERVIEW
-This application is a single-file web-based game that challenges users to find hidden words in a grid. It is designed to be accessible on any device, from mobile phones to desktop computers, ensuring all UI elements remain perfectly aligned and visible.
-KEY FEATURES
-Eight Progressive Levels: Grids expand from 3x3 up to 10x10 as the player advances.
-Bilingual Engine: Instant toggle between English and Arabic languages.
-Full RTL Support: Complete Right-to-Left layout and logic for Arabic gameplay.
-Hindi Numerals: Automatic conversion of all digits to Hindi format (٠١٢٣٤٥٦٧٨٩) in Arabic mode.
-Advanced Coloring: Magical color-blending gradients for letters shared between overlapping words.
-Interactive Mascot: An animated SVG mascot that reacts to player performance with happy spins or sad expressions.
-Responsive Scaling: Uses fluid units to maintain proportionality on any screen size.
-UI Controls: Includes fullscreen mode and a secure home reset confirmation modal.
-TECHNOLOGIES USED
-HTML5 and Vanilla JavaScript
-Tailwind CSS for modern, rounded UI components
-SVG for mascot animations and selection path drawing
-Google Fonts: Nunito, Fredoka One, and Noto Sans Arabic
-HOW TO PLAY
-Choose your language: Use the AR/EN toggle in the top right.
-Start the game: Click the START button on the intro screen.
-Find words: Slide your finger or mouse over the grid to connect letters.
-Clear the level: Locate all three target words to move to the next level.
-Win the quest: Complete all eight levels to see the final victory animation.
-DEVELOPER INFO
-This project is part of the Robomarket.ae initiative to provide high-quality educational and interactive tools.
-WEBSITE
-https://robomarket.ae
-LICENSE
-MIT License
+# WORD FINDER
+
+Play: https://joenasriani.github.io/kids-word-finder/
+
+WORD FINDER is an eight-level bilingual word-search game developed as part of a multi-game interactive children’s edutainment activation in the UAE.
+
+## Game structure
+
+Each level generates a square letter grid and places three target words in horizontal, vertical or diagonal directions, including reversed directions. The player selects adjacent letters in a straight line by dragging with a mouse or touch input.
+
+**generate grid → place three target words → drag across letters → validate selected word → mark found word → find all three → advance level**
+
+The grid expands with progression:
+
+- Level 1: 3×3
+- Level 2: 4×4
+- Level 3: 5×5
+- Level 4: 6×6
+- Level 5: 7×7
+- Level 6: 8×8
+- Level 7: 9×9
+- Level 8: 10×10
+
+## English and Arabic modes
+
+The game includes separate English and Arabic word pools. Switching to Arabic changes the interface language, applies right-to-left layout behavior and displays level/grid numbers with Arabic-Indic digits.
+
+## Interaction details
+
+- exactly three target words are selected for each level;
+- overlapping found words can share letters and display combined color treatment;
+- the mascot reacts to valid and invalid selections;
+- fullscreen and home/reset controls are built into the game;
+- completing Level 8 opens the final victory screen.
+
+## Activation context
+
+This game belongs to the same `kids-*` game set developed for the multi-game interactive children’s edutainment activation in the UAE.
+
+## Evidence boundary
+
+The repository implements bilingual word-search play. It does not contain a study measuring vocabulary acquisition, reading development, language learning, memory improvement or transfer outside the game.
+
+## Repository scope
+
+The playable implementation is contained entirely in `index.html`.
+
+`index.html` is preserved as the game artifact. Documentation and discovery files must not alter the word pools, grid generation, word placement, selection rules, level progression, language behavior, controls, visuals, mascot behavior or runtime behavior.

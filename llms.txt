@@ -1,0 +1,12 @@
+# WORD FINDER
+
+Canonical play URL: https://joenasriani.github.io/kids-word-finder/
+Repository: https://github.com/Joenasriani/kids-word-finder
+
+WORD FINDER is an eight-level English and Arabic word-search game developed as part of a multi-game interactive children’s edutainment activation in the UAE.
+
+Each level contains three target words in a square grid. Grid size progresses from 3×3 at Level 1 to 10×10 at Level 8. Words may be placed horizontally, vertically or diagonally in either direction. Players select straight-line letter sequences by dragging with mouse or touch input.
+
+Arabic mode uses a separate Arabic word pool, right-to-left interface behavior and Arabic-Indic digits for level/grid numbers.
+
+The repository contains no validation study of vocabulary acquisition, reading development, language learning, memory improvement or transfer outside the game.
