@@ -2,15 +2,15 @@
 
 Play: https://joenasriani.github.io/kids-word-finder/
 
-WORD FINDER is an eight-level bilingual word-search game developed as part of a multi-game interactive children’s edutainment activation in the UAE.
+WORD FINDER is an eight-level bilingual English/Arabic word-search game.
 
-## Game structure
+## How it plays
 
-Each level generates a square letter grid and places three target words in horizontal, vertical or diagonal directions, including reversed directions. The player selects adjacent letters in a straight line by dragging with a mouse or touch input.
+Each level generates a square letter grid and places three target words horizontally, vertically or diagonally, including reversed directions. The player drags across adjacent letters in a straight line to submit a word.
 
-**generate grid → place three target words → drag across letters → validate selected word → mark found word → find all three → advance level**
+**generate grid → place three words → drag across letters → validate selection → mark found word → find all three → advance level**
 
-The grid expands with progression:
+Grid progression:
 
 - Level 1: 3×3
 - Level 2: 4×4
@@ -21,28 +21,25 @@ The grid expands with progression:
 - Level 7: 9×9
 - Level 8: 10×10
 
-## English and Arabic modes
+## Language modes
 
-The game includes separate English and Arabic word pools. Switching to Arabic changes the interface language, applies right-to-left layout behavior and displays level/grid numbers with Arabic-Indic digits.
+English and Arabic use separate word pools. Arabic mode switches the interface to right-to-left behavior and displays level/grid numbers with Arabic-Indic digits.
 
-## Interaction details
+## Interaction
 
-- exactly three target words are selected for each level;
-- overlapping found words can share letters and display combined color treatment;
-- the mascot reacts to valid and invalid selections;
-- fullscreen and home/reset controls are built into the game;
-- completing Level 8 opens the final victory screen.
+- three target words per level;
+- mouse and touch drag selection;
+- overlapping found words can share cells;
+- mascot feedback for valid and invalid selections;
+- fullscreen and home/reset controls;
+- Level 8 completion opens the final victory screen.
 
-## Activation context
+## Implementation
 
-This game belongs to the same `kids-*` game set developed for the multi-game interactive children’s edutainment activation in the UAE.
+The complete playable game is contained in `index.html`.
 
-## Evidence boundary
+## Event activation
 
-The repository implements bilingual word-search play. It does not contain a study measuring vocabulary acquisition, reading development, language learning, memory improvement or transfer outside the game.
+This game was developed as one module in a multi-game interactive children’s edutainment activation in the UAE.
 
-## Repository scope
-
-The playable implementation is contained entirely in `index.html`.
-
-`index.html` is preserved as the game artifact. Documentation and discovery files must not alter the word pools, grid generation, word placement, selection rules, level progression, language behavior, controls, visuals, mascot behavior or runtime behavior.
+Event production: [Peach Society](https://peach-society.com/) — Dubai-based event and experiential production company.
